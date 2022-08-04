@@ -6,7 +6,8 @@ import 'package:meta/meta.dart';
 part 'details_state.dart';
 
 class DetailsCubit extends Cubit<DetailsState> {
-  DetailsCubit(this._itemsRepository) : super(DetailsState(itemModel: null));
+  DetailsCubit(this._itemsRepository)
+      : super(const DetailsState(itemModel: null));
 
   final ItemsRepository _itemsRepository;
 
